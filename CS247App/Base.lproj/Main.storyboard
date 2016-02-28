@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CS247App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="qXH-Fp-kZ0" kind="show" identifier="toExercise" id="eYx-9c-V43"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Exercise View Controller-->
+        <scene sceneID="vqO-6t-zYP">
+            <objects>
+                <viewController id="qXH-Fp-kZ0" customClass="ExerciseViewController" customModule="CS247App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8ha-gS-Ipg"/>
+                        <viewControllerLayoutGuide type="bottom" id="7ky-sJ-FEJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="O9b-Xa-Ydt">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="nW6-x0-xz5" kind="show" identifier="toFinishedExercise" id="MxC-jn-U24"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GNM-7L-oSp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1145" y="315"/>
+        </scene>
+        <!--Finished Exercise View Controller-->
+        <scene sceneID="47a-OF-6BA">
+            <objects>
+                <viewController id="nW6-x0-xz5" customClass="FinishedExerciseViewController" customModule="CS247App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MFK-eY-VEA"/>
+                        <viewControllerLayoutGuide type="bottom" id="Hof-j8-IpI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yfD-wt-oac">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="tAe-Op-QWZ" kind="show" identifier="toSocialNotification" id="Yec-hR-ACd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rdh-3y-naA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1990" y="315"/>
+        </scene>
+        <!--Social Notification View Controller-->
+        <scene sceneID="xjd-ZG-OuO">
+            <objects>
+                <viewController id="tAe-Op-QWZ" customClass="SocialNotificationViewController" customModule="CS247App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ny4-G0-FJc"/>
+                        <viewControllerLayoutGuide type="bottom" id="UKQ-Ju-UaI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LHu-Gj-Jmv">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tab-Er-DnT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2820" y="315"/>
+        </scene>
+    </scenes>
+</document>
