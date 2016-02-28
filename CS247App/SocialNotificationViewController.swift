@@ -13,7 +13,7 @@ class SocialNotificationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+
         let notificationLabel   = UILabel(frame: CGRectMake(100, 100, 100, 50))
         notificationLabel.backgroundColor = UIColor.grayColor()
         notificationLabel.text = "Social notification"

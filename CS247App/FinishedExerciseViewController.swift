@@ -13,7 +13,14 @@ class FinishedExerciseViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+
+        let exerciseImage: UIImage = UIImage(named: "finished-exercise")!
+        let exerciseImageView = UIImageView(image: exerciseImage)
+
+        // Set dimensions to full size of iPhone 6 Plus screen.
+        exerciseImageView.frame = CGRectMake(0, 0, 414, 736)
+        self.view.addSubview(exerciseImageView)
+
         let toSocialNotification = UIButton(frame: CGRectMake(100, 100, 100, 50))
         toSocialNotification.backgroundColor = UIColor.grayColor()
         toSocialNotification.setTitle("Next", forState: UIControlState.Normal)
