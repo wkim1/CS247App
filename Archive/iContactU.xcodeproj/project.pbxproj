@@ -11,7 +11,6 @@
 		8614B8E7197D440C005BF7A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8614B8E6197D440C005BF7A6 /* AppDelegate.swift */; };
 		8614B8EA197D440C005BF7A6 /* iContactU.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8614B8E8197D440C005BF7A6 /* iContactU.xcdatamodeld */; };
 		8614B8F1197D440C005BF7A6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8614B8F0197D440C005BF7A6 /* Images.xcassets */; };
-		8614B8FD197D440C005BF7A6 /* iContactUTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8614B8FC197D440C005BF7A6 /* iContactUTests.swift */; };
 		8614B90E197D4957005BF7A6 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8614B90D197D4957005BF7A6 /* ToDoItem.swift */; };
 		8614B910197D4957005BF7A6 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8614B90F197D4957005BF7A6 /* Contact.swift */; };
 		8614B91A197D8862005BF7A6 /* ContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8614B919197D8862005BF7A6 /* ContactsTableViewController.swift */; };
@@ -52,8 +51,6 @@
 		8614B8E9197D440C005BF7A6 /* iContactU.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iContactU.xcdatamodel; sourceTree = "<group>"; };
 		8614B8F0197D440C005BF7A6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8614B8F6197D440C005BF7A6 /* iContactUTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iContactUTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8614B8FB197D440C005BF7A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8614B8FC197D440C005BF7A6 /* iContactUTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iContactUTests.swift; sourceTree = "<group>"; };
 		8614B90C197D4956005BF7A6 /* iContactU-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iContactU-Bridging-Header.h"; sourceTree = "<group>"; };
 		8614B90D197D4957005BF7A6 /* ToDoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
 		8614B90F197D4957005BF7A6 /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
@@ -113,7 +110,6 @@
 			children = (
 				DF07582D19BF44A80005AEA6 /* breeze */,
 				8614B8E3197D440C005BF7A6 /* iContactU */,
-				8614B8F9197D440C005BF7A6 /* iContactUTests */,
 				8614B8E2197D440C005BF7A6 /* Products */,
 				72081F0632FA4C90B70F0191 /* Frameworks */,
 				E051A02120F9B2B5C6D48CA6 /* Pods */,
@@ -153,23 +149,6 @@
 			isa = PBXGroup;
 			children = (
 				8614B8E5197D440C005BF7A6 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		8614B8F9197D440C005BF7A6 /* iContactUTests */ = {
-			isa = PBXGroup;
-			children = (
-				8614B8FC197D440C005BF7A6 /* iContactUTests.swift */,
-				8614B8FA197D440C005BF7A6 /* Supporting Files */,
-			);
-			path = iContactUTests;
-			sourceTree = "<group>";
-		};
-		8614B8FA197D440C005BF7A6 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				8614B8FB197D440C005BF7A6 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -262,7 +241,7 @@
 				TargetAttributes = {
 					8614B8E0197D440C005BF7A6 = {
 						CreatedOnToolsVersion = 6.0;
-						DevelopmentTeam = U9MM9QBAQQ;
+						DevelopmentTeam = BSN5654927;
 					};
 					8614B8F5197D440C005BF7A6 = {
 						CreatedOnToolsVersion = 6.0;
@@ -374,7 +353,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8614B8FD197D440C005BF7A6 /* iContactUTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,9 +475,13 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CREATE_INFOPLIST_SECTION_IN_BINARY = YES;
+				GENERATE_PKGINFO_FILE = YES;
+				INFOPLIST_EXPAND_BUILD_SETTINGS = YES;
 				INFOPLIST_FILE = iContactU/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iContactU;
 				PRODUCT_NAME = iContactU;
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "iContactU/iContactU-Bridging-Header.h";
@@ -516,9 +498,13 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CREATE_INFOPLIST_SECTION_IN_BINARY = YES;
+				GENERATE_PKGINFO_FILE = YES;
+				INFOPLIST_EXPAND_BUILD_SETTINGS = YES;
 				INFOPLIST_FILE = iContactU/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iContactU;
 				PRODUCT_NAME = iContactU;
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "iContactU/iContactU-Bridging-Header.h";
@@ -537,7 +523,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = iContactUTests/Info.plist;
+				INFOPLIST_FILE = "";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = iContactUTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -552,7 +538,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = iContactUTests/Info.plist;
+				INFOPLIST_FILE = "";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = iContactUTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
