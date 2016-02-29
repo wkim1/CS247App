@@ -26,8 +26,18 @@ class FinishedExerciseViewController: UIViewController {
         toSocialNotification.setTitle("Next", forState: UIControlState.Normal)
         toSocialNotification.addTarget(self, action: "toSocialNotification:", forControlEvents: .TouchUpInside)
         self.view.addSubview(toSocialNotification)
+        
+        NSTimer.scheduledTimerWithTimeInterval(NSTimeInterval(1), target: self, selector: "showModal", userInfo: nil, repeats: false)
+
     }
-    
+
+    func showModal() {
+        print("Called showModal")
+        let modalViewController = SocialNotificationModalViewController()
+        modalViewController.modalPresentationStyle = .OverCurrentContext
+        presentViewController(modalViewController, animated: true, completion: nil)
+    }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

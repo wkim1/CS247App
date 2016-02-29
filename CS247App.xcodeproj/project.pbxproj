@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E2F128051C83FFE00092A98A /* SocialNotificationModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F128041C83FFE00092A98A /* SocialNotificationModalViewController.swift */; };
 		E2F140441C8374C100E230FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F140431C8374C100E230FB /* AppDelegate.swift */; };
 		E2F140461C8374C100E230FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F140451C8374C100E230FB /* ViewController.swift */; };
 		E2F140491C8374C100E230FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2F140471C8374C100E230FB /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E2F128041C83FFE00092A98A /* SocialNotificationModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialNotificationModalViewController.swift; sourceTree = "<group>"; };
 		E2F140401C8374C100E230FB /* CS247App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CS247App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2F140431C8374C100E230FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2F140451C8374C100E230FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				E2F140431C8374C100E230FB /* AppDelegate.swift */,
 				E2F140451C8374C100E230FB /* ViewController.swift */,
 				E2F140761C837A1A00E230FB /* FinishedExerciseViewController.swift */,
+				E2F128041C83FFE00092A98A /* SocialNotificationModalViewController.swift */,
 				E2F140781C837A3200E230FB /* SocialNotificationViewController.swift */,
 				E2F140471C8374C100E230FB /* Main.storyboard */,
 				E2F140741C83788500E230FB /* ExerciseViewController.swift */,
@@ -269,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2F140791C837A3200E230FB /* SocialNotificationViewController.swift in Sources */,
+				E2F128051C83FFE00092A98A /* SocialNotificationModalViewController.swift in Sources */,
 				E2F140461C8374C100E230FB /* ViewController.swift in Sources */,
 				E2F140441C8374C100E230FB /* AppDelegate.swift in Sources */,
 				E2F140751C83788500E230FB /* ExerciseViewController.swift in Sources */,
@@ -500,6 +504,7 @@
 				E2F1406D1C8374C100E230FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E2F1406E1C8374C100E230FB /* Build configuration list for PBXNativeTarget "CS247AppTests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +513,7 @@
 				E2F140701C8374C100E230FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E2F140711C8374C100E230FB /* Build configuration list for PBXNativeTarget "CS247AppUITests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +522,7 @@
 				E2F140731C8374C100E230FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
