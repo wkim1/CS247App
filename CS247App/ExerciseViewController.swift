@@ -14,14 +14,14 @@ class ExerciseViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
 
-        let exerciseImage: UIImage = UIImage(named: "exercise")!
+        let exerciseImage: UIImage = UIImage(named: "squat-exercise")!
         let exerciseImageView = UIImageView(image: exerciseImage)
         
         // Set dimensions to full size of iPhone 6 Plus screen.
         exerciseImageView.frame = CGRectMake(0, 0, 414, 736)
         self.view.addSubview(exerciseImageView)
 
-        let finishedExerciseButton   = UIButton(frame: CGRectMake(100, 100, 100, 50))
+        let finishedExerciseButton   = UIButton(frame: CGRectMake(165, 675, 100, 50))
         finishedExerciseButton.backgroundColor = UIColor.grayColor()
         finishedExerciseButton.setTitle("Done", forState: UIControlState.Normal)
         finishedExerciseButton.addTarget(self, action: "toFinishedExercise:", forControlEvents: .TouchUpInside)
