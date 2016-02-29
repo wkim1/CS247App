@@ -21,22 +21,21 @@ class FinishedExerciseViewController: UIViewController {
         exerciseImageView.frame = CGRectMake(0, 0, 414, 736)
         self.view.addSubview(exerciseImageView)
 
-        let toSocialNotification = UIButton(frame: CGRectMake(100, 100, 100, 50))
-        toSocialNotification.backgroundColor = UIColor.grayColor()
-        toSocialNotification.setTitle("Next", forState: UIControlState.Normal)
-        toSocialNotification.addTarget(self, action: "toSocialNotification:", forControlEvents: .TouchUpInside)
-        self.view.addSubview(toSocialNotification)
+        // Show a modal after some seconds.
+        NSTimer.scheduledTimerWithTimeInterval(NSTimeInterval(5), target: self, selector: "showModal", userInfo: nil, repeats: false)
+
     }
-    
+
+    func showModal() {
+        let modalViewController = SocialNotificationModalViewController()
+        modalViewController.modalPresentationStyle = .FormSheet
+        presentViewController(modalViewController, animated: true, completion: nil)
+    }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    @IBAction func toSocialNotification(sender: AnyObject) {
-        performSegueWithIdentifier("toSocialNotification", sender: sender)
-    }
-    
     
 }
 

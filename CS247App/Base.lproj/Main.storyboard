@@ -59,31 +59,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <connections>
-                        <segue destination="tAe-Op-QWZ" kind="show" identifier="toSocialNotification" id="Yec-hR-ACd"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rdh-3y-naA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1990" y="315"/>
-        </scene>
-        <!--Social Notification View Controller-->
-        <scene sceneID="xjd-ZG-OuO">
-            <objects>
-                <viewController id="tAe-Op-QWZ" customClass="SocialNotificationViewController" customModule="CS247App" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ny4-G0-FJc"/>
-                        <viewControllerLayoutGuide type="bottom" id="UKQ-Ju-UaI"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="LHu-Gj-Jmv">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tab-Er-DnT" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2820" y="315"/>
         </scene>
     </scenes>
 </document>
