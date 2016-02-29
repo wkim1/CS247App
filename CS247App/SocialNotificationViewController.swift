@@ -18,13 +18,13 @@ class SocialNotificationViewController: UIViewController {
         notificationLabel.backgroundColor = UIColor.grayColor()
         notificationLabel.text = "Social notification"
         self.view.addSubview(notificationLabel)
+
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
     
 }
 

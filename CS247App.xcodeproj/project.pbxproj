@@ -18,7 +18,6 @@
 		E2F140671C8374C100E230FB /* CS247AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F140661C8374C100E230FB /* CS247AppUITests.swift */; };
 		E2F140751C83788500E230FB /* ExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F140741C83788500E230FB /* ExerciseViewController.swift */; };
 		E2F140771C837A1A00E230FB /* FinishedExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F140761C837A1A00E230FB /* FinishedExerciseViewController.swift */; };
-		E2F140791C837A3200E230FB /* SocialNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F140781C837A3200E230FB /* SocialNotificationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +55,6 @@
 		E2F140681C8374C100E230FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2F140741C83788500E230FB /* ExerciseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseViewController.swift; sourceTree = "<group>"; };
 		E2F140761C837A1A00E230FB /* FinishedExerciseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinishedExerciseViewController.swift; sourceTree = "<group>"; };
-		E2F140781C837A3200E230FB /* SocialNotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialNotificationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +109,6 @@
 				E2F140451C8374C100E230FB /* ViewController.swift */,
 				E2F140761C837A1A00E230FB /* FinishedExerciseViewController.swift */,
 				E2F128041C83FFE00092A98A /* SocialNotificationModalViewController.swift */,
-				E2F140781C837A3200E230FB /* SocialNotificationViewController.swift */,
 				E2F140471C8374C100E230FB /* Main.storyboard */,
 				E2F140741C83788500E230FB /* ExerciseViewController.swift */,
 				E2F1404D1C8374C100E230FB /* Assets.xcassets */,
@@ -271,7 +268,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2F140791C837A3200E230FB /* SocialNotificationViewController.swift in Sources */,
 				E2F128051C83FFE00092A98A /* SocialNotificationModalViewController.swift in Sources */,
 				E2F140461C8374C100E230FB /* ViewController.swift in Sources */,
 				E2F140441C8374C100E230FB /* AppDelegate.swift in Sources */,
