@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E2F128051C83FFE00092A98A /* SocialNotificationModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F128041C83FFE00092A98A /* SocialNotificationModalViewController.swift */; };
+		E24307A91C8FA5A6009EEB8E /* ExercisesHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24307A81C8FA5A6009EEB8E /* ExercisesHomeViewController.swift */; };
 		E2F140441C8374C100E230FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F140431C8374C100E230FB /* AppDelegate.swift */; };
 		E2F140461C8374C100E230FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F140451C8374C100E230FB /* ViewController.swift */; };
 		E2F140491C8374C100E230FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2F140471C8374C100E230FB /* Main.storyboard */; };
@@ -16,8 +16,10 @@
 		E2F140511C8374C100E230FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2F1404F1C8374C100E230FB /* LaunchScreen.storyboard */; };
 		E2F1405C1C8374C100E230FB /* CS247AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F1405B1C8374C100E230FB /* CS247AppTests.swift */; };
 		E2F140671C8374C100E230FB /* CS247AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F140661C8374C100E230FB /* CS247AppUITests.swift */; };
-		E2F140751C83788500E230FB /* ExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F140741C83788500E230FB /* ExerciseViewController.swift */; };
-		E2F140771C837A1A00E230FB /* FinishedExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F140761C837A1A00E230FB /* FinishedExerciseViewController.swift */; };
+		E2F62D8C1C8F9CAE00C1541D /* SegueFromLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F62D8B1C8F9CAE00C1541D /* SegueFromLeft.swift */; };
+		E2F62D8E1C8F9E2300C1541D /* SegueFromRight.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F62D8D1C8F9E2300C1541D /* SegueFromRight.swift */; };
+		E2F62D941C8FA1CE00C1541D /* ExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F62D931C8FA1CE00C1541D /* ExerciseViewController.swift */; };
+		E2F62D961C8FA20500C1541D /* MilestonesHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F62D951C8FA20500C1541D /* MilestonesHomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E2F128041C83FFE00092A98A /* SocialNotificationModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialNotificationModalViewController.swift; sourceTree = "<group>"; };
+		E24307A81C8FA5A6009EEB8E /* ExercisesHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExercisesHomeViewController.swift; sourceTree = "<group>"; };
 		E2F140401C8374C100E230FB /* CS247App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CS247App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2F140431C8374C100E230FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2F140451C8374C100E230FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -53,8 +55,10 @@
 		E2F140621C8374C100E230FB /* CS247AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CS247AppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2F140661C8374C100E230FB /* CS247AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CS247AppUITests.swift; sourceTree = "<group>"; };
 		E2F140681C8374C100E230FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E2F140741C83788500E230FB /* ExerciseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseViewController.swift; sourceTree = "<group>"; };
-		E2F140761C837A1A00E230FB /* FinishedExerciseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinishedExerciseViewController.swift; sourceTree = "<group>"; };
+		E2F62D8B1C8F9CAE00C1541D /* SegueFromLeft.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueFromLeft.swift; sourceTree = "<group>"; };
+		E2F62D8D1C8F9E2300C1541D /* SegueFromRight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueFromRight.swift; sourceTree = "<group>"; };
+		E2F62D931C8FA1CE00C1541D /* ExerciseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseViewController.swift; sourceTree = "<group>"; };
+		E2F62D951C8FA20500C1541D /* MilestonesHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MilestonesHomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,12 +109,14 @@
 		E2F140421C8374C100E230FB /* CS247App */ = {
 			isa = PBXGroup;
 			children = (
+				E2F62D931C8FA1CE00C1541D /* ExerciseViewController.swift */,
+				E24307A81C8FA5A6009EEB8E /* ExercisesHomeViewController.swift */,
+				E2F62D951C8FA20500C1541D /* MilestonesHomeViewController.swift */,
 				E2F140431C8374C100E230FB /* AppDelegate.swift */,
 				E2F140451C8374C100E230FB /* ViewController.swift */,
-				E2F140761C837A1A00E230FB /* FinishedExerciseViewController.swift */,
-				E2F128041C83FFE00092A98A /* SocialNotificationModalViewController.swift */,
 				E2F140471C8374C100E230FB /* Main.storyboard */,
-				E2F140741C83788500E230FB /* ExerciseViewController.swift */,
+				E2F62D8B1C8F9CAE00C1541D /* SegueFromLeft.swift */,
+				E2F62D8D1C8F9E2300C1541D /* SegueFromRight.swift */,
 				E2F1404D1C8374C100E230FB /* Assets.xcassets */,
 				E2F1404F1C8374C100E230FB /* LaunchScreen.storyboard */,
 				E2F140521C8374C100E230FB /* Info.plist */,
@@ -268,11 +274,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2F128051C83FFE00092A98A /* SocialNotificationModalViewController.swift in Sources */,
+				E2F62D961C8FA20500C1541D /* MilestonesHomeViewController.swift in Sources */,
 				E2F140461C8374C100E230FB /* ViewController.swift in Sources */,
+				E2F62D941C8FA1CE00C1541D /* ExerciseViewController.swift in Sources */,
+				E2F62D8E1C8F9E2300C1541D /* SegueFromRight.swift in Sources */,
 				E2F140441C8374C100E230FB /* AppDelegate.swift in Sources */,
-				E2F140751C83788500E230FB /* ExerciseViewController.swift in Sources */,
-				E2F140771C837A1A00E230FB /* FinishedExerciseViewController.swift in Sources */,
+				E24307A91C8FA5A6009EEB8E /* ExercisesHomeViewController.swift in Sources */,
+				E2F62D8C1C8F9CAE00C1541D /* SegueFromLeft.swift in Sources */,
 				E2F1404C1C8374C100E230FB /* CS247App.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

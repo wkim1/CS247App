@@ -14,55 +14,355 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="login" translatesAutoresizingMaskIntoConstraints="NO" id="kZO-gG-0ns">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7S5-Ei-uhB">
+                                <rect key="frame" x="29" y="459" width="321" height="73"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="i6k-PV-NHs" kind="show" customClass="SegueFromRight" customModule="CS247App" customModuleProvider="target" id="Qag-XY-FTR"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <connections>
-                        <segue destination="qXH-Fp-kZ0" kind="show" identifier="toExercise" id="eYx-9c-V43"/>
-                    </connections>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="331.5" y="357.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="QYb-Mg-dWK">
+            <objects>
+                <viewController id="i6k-PV-NHs" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Okw-5x-zpN"/>
+                        <viewControllerLayoutGuide type="bottom" id="ei3-xs-EMZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UkY-gc-54c">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ally-setup" translatesAutoresizingMaskIntoConstraints="NO" id="dR1-e4-KO4">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5CT-ge-JcH">
+                                <rect key="frame" x="257" y="286" width="98" height="39"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="WHW-lB-j7t" kind="show" customClass="SegueFromRight" customModule="CS247App" customModuleProvider="target" id="I1g-IQ-cq6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rK2-oZ-3oI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="795.5" y="357.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Y7p-Bq-QPs">
+            <objects>
+                <viewController id="WHW-lB-j7t" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YjQ-ht-Snv"/>
+                        <viewControllerLayoutGuide type="bottom" id="7nE-gn-nT1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KJR-QQ-8eF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ally-confirmation" translatesAutoresizingMaskIntoConstraints="NO" id="S13-EL-vwP">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u8b-wf-kS6">
+                                <rect key="frame" x="125" y="41" width="125" height="39"/>
+                                <state key="normal" title="Confirmed sent">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="hd6-el-H0v" kind="show" customClass="SegueFromRight" customModule="CS247App" customModuleProvider="target" id="qWb-7t-HHJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rAg-VE-9ak" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1231.5" y="357.5"/>
         </scene>
         <!--Exercise View Controller-->
-        <scene sceneID="vqO-6t-zYP">
+        <scene sceneID="VK3-0U-nRT">
             <objects>
-                <viewController id="qXH-Fp-kZ0" customClass="ExerciseViewController" customModule="CS247App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Jtc-3Q-d5f" customClass="ExerciseViewController" customModule="CS247App" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="8ha-gS-Ipg"/>
-                        <viewControllerLayoutGuide type="bottom" id="7ky-sJ-FEJ"/>
+                        <viewControllerLayoutGuide type="top" id="Tmv-Xf-gQU"/>
+                        <viewControllerLayoutGuide type="bottom" id="xvm-gY-9Wq"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="O9b-Xa-Ydt">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="scaleToFill" id="tll-j1-o5f">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="squats" translatesAutoresizingMaskIntoConstraints="NO" id="alC-WI-aYX">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pyv-pZ-mjV">
+                                <rect key="frame" x="93" y="439" width="188" height="70"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="doneExerciseButtonAction:" destination="Jtc-3Q-d5f" eventType="touchUpInside" id="FHk-Tw-bwT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wfn-W4-YWi">
+                                <rect key="frame" x="0.0" y="0.0" width="81" height="56"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="hd6-el-H0v" kind="show" id="7oM-5E-48H"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <segue destination="nW6-x0-xz5" kind="show" identifier="toFinishedExercise" id="MxC-jn-U24"/>
+                        <outlet property="doneExerciseButton" destination="Pyv-pZ-mjV" id="o4D-23-Qpc"/>
+                        <outlet property="exerciseImage" destination="alC-WI-aYX" id="rmB-IY-sqQ"/>
+                        <segue destination="hd6-el-H0v" kind="show" identifier="exerciseToExercisesHome" id="Mwu-am-PHx"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GNM-7L-oSp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nXR-Rf-kG2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1145" y="315"/>
+            <point key="canvasLocation" x="1689.5" y="-573.5"/>
         </scene>
-        <!--Finished Exercise View Controller-->
-        <scene sceneID="47a-OF-6BA">
+        <!--Exercises Home View Controller-->
+        <scene sceneID="ILX-p2-Xxh">
             <objects>
-                <viewController id="nW6-x0-xz5" customClass="FinishedExerciseViewController" customModule="CS247App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="hd6-el-H0v" customClass="ExercisesHomeViewController" customModule="CS247App" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="MFK-eY-VEA"/>
-                        <viewControllerLayoutGuide type="bottom" id="Hof-j8-IpI"/>
+                        <viewControllerLayoutGuide type="top" id="SoH-0o-r3D"/>
+                        <viewControllerLayoutGuide type="bottom" id="TJa-R5-uPM"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="yfD-wt-oac">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="scaleToFill" id="kfz-N7-Fub">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="exercises-home" translatesAutoresizingMaskIntoConstraints="NO" id="Qtv-6y-V2z">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q3l-qu-Mke">
+                                <rect key="frame" x="187" y="597" width="188" height="70"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Ht9-Je-1m3" kind="show" identifier="exercisesHomeToMilestonesHome" id="fb9-d7-SJi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iTv-LG-Lpy">
+                                <rect key="frame" x="201" y="222" width="160" height="56"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="squatsButtonAction:" destination="hd6-el-H0v" eventType="touchUpInside" id="Te2-hT-0me"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="njC-nX-8qq">
+                                <rect key="frame" x="203" y="329" width="160" height="56"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="legExtButtonAction:" destination="hd6-el-H0v" eventType="touchUpInside" id="2Ix-dA-vCU"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="legExtButton" destination="njC-nX-8qq" id="l5x-FS-406"/>
+                        <outlet property="squatsButton" destination="iTv-LG-Lpy" id="ucP-yW-zMq"/>
+                        <segue destination="Jtc-3Q-d5f" kind="show" identifier="exercisesHomeToExercise" id="fd6-CY-TMV"/>
+                        <segue destination="i1m-Ur-YPZ" kind="show" identifier="exercisesHomeToMilestoneNotification" id="o4N-vN-l8L"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Rdh-3y-naA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rDc-xW-Ggt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1990" y="315"/>
+            <point key="canvasLocation" x="1689.5" y="357.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="w6c-Kw-tzh">
+            <objects>
+                <viewController id="i1m-Ur-YPZ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="703-1B-NTv"/>
+                        <viewControllerLayoutGuide type="bottom" id="q2O-9a-Y3T"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RM1-kb-zpY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jfL-wH-R8k">
+                                <rect key="frame" x="125" y="314" width="125" height="39"/>
+                                <state key="normal" title="New milestone">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Ht9-Je-1m3" kind="show" id="9Xy-B4-g17"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ELS-pk-Zz5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2785.5" y="-573.5"/>
+        </scene>
+        <!--Milestones Home View Controller-->
+        <scene sceneID="fpo-Sg-tou">
+            <objects>
+                <viewController id="Ht9-Je-1m3" customClass="MilestonesHomeViewController" customModule="CS247App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9eh-zp-VsY"/>
+                        <viewControllerLayoutGuide type="bottom" id="HdP-1d-XeA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cUL-8R-Pp3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="milestones-home2" translatesAutoresizingMaskIntoConstraints="NO" id="Shd-MP-24t">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c9O-tI-ZiA">
+                                <rect key="frame" x="0.0" y="194" width="375" height="99"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vBi-O2-obS" kind="show" identifier="milestonesHomeToMilestone" id="tSy-b6-qNg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xVN-wu-MIH">
+                                <rect key="frame" x="0.0" y="596" width="189" height="71"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="hd6-el-H0v" kind="show" id="4Gw-VB-oCl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m3o-gq-hpO">
+                                <rect key="frame" x="0.0" y="293" width="375" height="90"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="milestone2ButtonAction:" destination="Ht9-Je-1m3" eventType="touchUpInside" id="BSu-O1-wfE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="milestone2Button" destination="m3o-gq-hpO" id="QfB-RX-1HK"/>
+                        <segue destination="YP5-nR-TMB" kind="show" identifier="milestonesHomeToMilestone2" id="1Kj-fh-Ac9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jRH-kT-E6I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2785.5" y="357.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="x17-ET-uhQ">
+            <objects>
+                <viewController id="YP5-nR-TMB" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1xF-JF-Kb4"/>
+                        <viewControllerLayoutGuide type="bottom" id="qbh-du-bGR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="F2C-vD-zqR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="milestone2" translatesAutoresizingMaskIntoConstraints="NO" id="YMe-Bl-mpQ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cNt-XQ-QZy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2785.5" y="1209.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="BPA-Ia-JEG">
+            <objects>
+                <viewController id="vBi-O2-obS" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0ei-Jo-ZRB"/>
+                        <viewControllerLayoutGuide type="bottom" id="WF1-Vk-CbC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fcy-rA-pNE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="milestone1" translatesAutoresizingMaskIntoConstraints="NO" id="RcM-6G-pGh">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qst-Xq-DVo">
+                                <rect key="frame" x="0.0" y="0.0" width="82" height="58"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Ht9-Je-1m3" kind="show" id="ZW3-0S-yFV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tlq-Lm-LLR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3391.5" y="357.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ally-confirmation" width="375" height="667"/>
+        <image name="ally-setup" width="375" height="667"/>
+        <image name="exercises-home" width="375" height="667"/>
+        <image name="login" width="375" height="667"/>
+        <image name="milestone1" width="375" height="667"/>
+        <image name="milestone2" width="375" height="667"/>
+        <image name="milestones-home2" width="375" height="667"/>
+        <image name="squats" width="375" height="667"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="4Gw-VB-oCl"/>
+        <segue reference="fb9-d7-SJi"/>
+    </inferredMetricsTieBreakers>
 </document>

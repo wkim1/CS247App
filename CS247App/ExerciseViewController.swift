@@ -1,8 +1,8 @@
 //
-//  ViewController.swift
+//  ExerciseViewController.swift
 //  CS247App
 //
-//  Created by Vivek on 2/28/16.
+//  Created by Vivek on 3/9/16.
 //  Copyright © 2016 CS247. All rights reserved.
 //
 
@@ -10,22 +10,20 @@ import UIKit
 
 class ExerciseViewController: UIViewController {
     
+    @IBOutlet weak var exerciseImage: UIImageView!
+    @IBOutlet weak var doneExerciseButton: UIButton!
+    
+    var exerciseType: Int?
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-
-        let exerciseImage: UIImage = UIImage(named: "squat-exercise")!
-        let exerciseImageView = UIImageView(image: exerciseImage)
         
-        // Set dimensions to full size of iPhone 6 Plus screen.
-        exerciseImageView.frame = CGRectMake(0, 0, 414, 736)
-        self.view.addSubview(exerciseImageView)
-
-        let finishedExerciseButton   = UIButton(frame: CGRectMake(165, 675, 100, 50))
-        finishedExerciseButton.backgroundColor = UIColor.grayColor()
-        finishedExerciseButton.setTitle("Done", forState: UIControlState.Normal)
-        finishedExerciseButton.addTarget(self, action: "toFinishedExercise:", forControlEvents: .TouchUpInside)
-        self.view.addSubview(finishedExerciseButton)
+        if (exerciseType! == 1) {
+            exerciseImage.image = UIImage(named: "squats")
+        } else if (exerciseType! == 2) {
+            exerciseImage.image = UIImage(named: "leg-ext")
+        }
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -33,10 +31,10 @@ class ExerciseViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func toFinishedExercise(sender: AnyObject) {
-        performSegueWithIdentifier("toFinishedExercise", sender: sender)
+    @IBAction func doneExerciseButtonAction(sender: AnyObject) {
+        // TODO: Check which exercise was done and set global var.
+        performSegueWithIdentifier("exerciseToExercisesHome", sender: nil)
+
     }
-    
-    
 }
 
