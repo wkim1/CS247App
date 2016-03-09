@@ -17,13 +17,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ExercisesList" translatesAutoresizingMaskIntoConstraints="NO" id="LjR-gw-lnK">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7S5-Ei-uhB">
-                                <rect key="frame" x="250" y="119" width="90" height="39"/>
+                                <rect key="frame" x="142" y="35" width="90" height="39"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
-                                    <segue destination="arA-Pn-rnG" kind="show" identifier="toExercise" customClass="SegueFromRight" customModule="CS247App" customModuleProvider="target" id="ZV2-NI-W0Z"/>
+                                    <segue destination="i6k-PV-NHs" kind="show" customClass="SegueFromRight" customModule="CS247App" customModuleProvider="target" id="Qag-XY-FTR"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -33,25 +33,64 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="433.5" y="439.5"/>
+            <point key="canvasLocation" x="331.5" y="357.5"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="bJP-tS-drA">
+        <scene sceneID="QYb-Mg-dWK">
             <objects>
-                <viewController id="arA-Pn-rnG" sceneMemberID="viewController">
-                    <imageView key="view" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="6s" id="lRt-TZ-4oY">
+                <viewController id="i6k-PV-NHs" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Okw-5x-zpN"/>
+                        <viewControllerLayoutGuide type="bottom" id="ei3-xs-EMZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UkY-gc-54c">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </imageView>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5CT-ge-JcH">
+                                <rect key="frame" x="138" y="42" width="98" height="39"/>
+                                <state key="normal" title="Set up allies">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="WHW-lB-j7t" kind="show" customClass="SegueFromRight" customModule="CS247App" customModuleProvider="target" id="I1g-IQ-cq6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="14S-BX-YRZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rK2-oZ-3oI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="972.5" y="357.5"/>
+            <point key="canvasLocation" x="795.5" y="357.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Y7p-Bq-QPs">
+            <objects>
+                <viewController id="WHW-lB-j7t" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YjQ-ht-Snv"/>
+                        <viewControllerLayoutGuide type="bottom" id="7nE-gn-nT1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KJR-QQ-8eF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u8b-wf-kS6">
+                                <rect key="frame" x="125" y="41" width="125" height="39"/>
+                                <state key="normal" title="Confirmed sent">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rAg-VE-9ak" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1231.5" y="357.5"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="6s" width="375" height="667"/>
-        <image name="ExercisesList" width="375" height="667"/>
-    </resources>
 </document>
