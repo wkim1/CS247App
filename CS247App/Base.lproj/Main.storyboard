@@ -82,6 +82,9 @@
                                 <state key="normal" title="Confirmed sent">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="hd6-el-H0v" kind="show" customClass="SegueFromRight" customModule="CS247App" customModuleProvider="target" id="qWb-7t-HHJ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -92,5 +95,147 @@
             </objects>
             <point key="canvasLocation" x="1231.5" y="357.5"/>
         </scene>
+        <!--Exercise View Controller-->
+        <scene sceneID="VK3-0U-nRT">
+            <objects>
+                <viewController id="Jtc-3Q-d5f" customClass="ExerciseViewController" customModule="CS247App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Tmv-Xf-gQU"/>
+                        <viewControllerLayoutGuide type="bottom" id="xvm-gY-9Wq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tll-j1-o5f">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <segue destination="hd6-el-H0v" kind="show" identifier="toExercisesHome" id="Smd-58-v14"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nXR-Rf-kG2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1689.5" y="-573.5"/>
+        </scene>
+        <!--Exercises Home View Controller-->
+        <scene sceneID="ILX-p2-Xxh">
+            <objects>
+                <viewController id="hd6-el-H0v" customClass="ExercisesHomeViewController" customModule="CS247App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SoH-0o-r3D"/>
+                        <viewControllerLayoutGuide type="bottom" id="TJa-R5-uPM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kfz-N7-Fub">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <segue destination="Jtc-3Q-d5f" kind="show" identifier="toExercise" id="fd6-CY-TMV"/>
+                        <segue destination="Ht9-Je-1m3" kind="show" identifier="exercisesHomeToMilestonesHome" id="Sft-HF-EPI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rDc-xW-Ggt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1689.5" y="357.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="e6Z-Pf-y0Y">
+            <objects>
+                <viewController id="XV3-aV-Vc8" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HuI-EM-z68"/>
+                        <viewControllerLayoutGuide type="bottom" id="JCJ-gC-fMl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vz0-3W-7AE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <segue destination="i1m-Ur-YPZ" kind="show" id="OF4-GV-Z9V"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ou4-0L-fZg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2233.5" y="-573.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="w6c-Kw-tzh">
+            <objects>
+                <viewController id="i1m-Ur-YPZ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="703-1B-NTv"/>
+                        <viewControllerLayoutGuide type="bottom" id="q2O-9a-Y3T"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RM1-kb-zpY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jfL-wH-R8k">
+                                <rect key="frame" x="125" y="314" width="125" height="39"/>
+                                <state key="normal" title="New milestone">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Ht9-Je-1m3" kind="show" id="9Xy-B4-g17"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ELS-pk-Zz5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2785.5" y="-573.5"/>
+        </scene>
+        <!--Milestones Home View Controller-->
+        <scene sceneID="fpo-Sg-tou">
+            <objects>
+                <viewController id="Ht9-Je-1m3" customClass="MilestonesHomeViewController" customModule="CS247App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9eh-zp-VsY"/>
+                        <viewControllerLayoutGuide type="bottom" id="HdP-1d-XeA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cUL-8R-Pp3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <segue destination="hd6-el-H0v" kind="show" identifier="milestonesHomeToExercisesHome" id="xkb-QJ-Eyo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jRH-kT-E6I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2785.5" y="357.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="BPA-Ia-JEG">
+            <objects>
+                <viewController id="vBi-O2-obS" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0ei-Jo-ZRB"/>
+                        <viewControllerLayoutGuide type="bottom" id="WF1-Vk-CbC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fcy-rA-pNE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tlq-Lm-LLR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3391.5" y="357.5"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Smd-58-v14"/>
+        <segue reference="9Xy-B4-g17"/>
+    </inferredMetricsTieBreakers>
 </document>
