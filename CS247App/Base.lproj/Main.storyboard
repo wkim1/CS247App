@@ -71,10 +71,10 @@
             </objects>
             <point key="canvasLocation" x="795.5" y="357.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Ally Confirmation View Controller-->
         <scene sceneID="Y7p-Bq-QPs">
             <objects>
-                <viewController id="WHW-lB-j7t" sceneMemberID="viewController">
+                <viewController id="WHW-lB-j7t" customClass="AllyConfirmationViewController" customModule="CS247App" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YjQ-ht-Snv"/>
                         <viewControllerLayoutGuide type="bottom" id="7nE-gn-nT1"/>
@@ -86,19 +86,13 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ally-confirmation" translatesAutoresizingMaskIntoConstraints="NO" id="S13-EL-vwP">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u8b-wf-kS6">
-                                <rect key="frame" x="125" y="41" width="125" height="39"/>
-                                <state key="normal" title="Confirmed sent">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="hd6-el-H0v" kind="show" customClass="SegueFromRight" customModule="CS247App" customModuleProvider="target" id="qWb-7t-HHJ"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <segue destination="hd6-el-H0v" kind="show" identifier="allyConfirmationToExercisesHome" customClass="SegueFromRight" customModule="CS247App" customModuleProvider="target" id="Fer-fZ-0XX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rAg-VE-9ak" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -372,7 +366,7 @@
         <image name="squats" width="375" height="667"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Mwu-am-PHx"/>
+        <segue reference="Fer-fZ-0XX"/>
         <segue reference="fb9-d7-SJi"/>
     </inferredMetricsTieBreakers>
 </document>
