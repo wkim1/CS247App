@@ -71,10 +71,10 @@
             </objects>
             <point key="canvasLocation" x="795.5" y="357.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Ally Confirmation View Controller-->
         <scene sceneID="Y7p-Bq-QPs">
             <objects>
-                <viewController id="WHW-lB-j7t" sceneMemberID="viewController">
+                <viewController id="WHW-lB-j7t" customClass="AllyConfirmationViewController" customModule="CS247App" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YjQ-ht-Snv"/>
                         <viewControllerLayoutGuide type="bottom" id="7nE-gn-nT1"/>
@@ -86,19 +86,13 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ally-confirmation" translatesAutoresizingMaskIntoConstraints="NO" id="S13-EL-vwP">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u8b-wf-kS6">
-                                <rect key="frame" x="125" y="41" width="125" height="39"/>
-                                <state key="normal" title="Confirmed sent">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="hd6-el-H0v" kind="show" customClass="SegueFromRight" customModule="CS247App" customModuleProvider="target" id="qWb-7t-HHJ"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <segue destination="hd6-el-H0v" kind="show" identifier="allyConfirmationToExercisesHome" customClass="SegueFromRight" customModule="CS247App" customModuleProvider="target" id="Fer-fZ-0XX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rAg-VE-9ak" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -134,7 +128,7 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="hd6-el-H0v" kind="show" id="7oM-5E-48H"/>
+                                    <segue destination="hd6-el-H0v" kind="show" customClass="SegueFromLeft" customModule="CS247App" customModuleProvider="target" id="7oM-5E-48H"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -144,7 +138,7 @@
                     <connections>
                         <outlet property="doneExerciseButton" destination="Pyv-pZ-mjV" id="o4D-23-Qpc"/>
                         <outlet property="exerciseImage" destination="alC-WI-aYX" id="rmB-IY-sqQ"/>
-                        <segue destination="hd6-el-H0v" kind="show" identifier="exerciseToExercisesHome" id="Mwu-am-PHx"/>
+                        <segue destination="hd6-el-H0v" kind="show" identifier="exerciseToExercisesHome" customClass="SegueFromRight" customModule="CS247App" customModuleProvider="target" id="Mwu-am-PHx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nXR-Rf-kG2" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -172,7 +166,7 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Ht9-Je-1m3" kind="show" identifier="exercisesHomeToMilestonesHome" id="fb9-d7-SJi"/>
+                                    <segue destination="Ht9-Je-1m3" kind="show" identifier="exercisesHomeToMilestonesHome" customClass="SegueFromRight" customModule="CS247App" customModuleProvider="target" id="fb9-d7-SJi"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iTv-LG-Lpy">
@@ -198,9 +192,10 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="exercisesHomeImage" destination="Qtv-6y-V2z" id="su8-Ao-kQD"/>
                         <outlet property="legExtButton" destination="njC-nX-8qq" id="l5x-FS-406"/>
                         <outlet property="squatsButton" destination="iTv-LG-Lpy" id="ucP-yW-zMq"/>
-                        <segue destination="Jtc-3Q-d5f" kind="show" identifier="exercisesHomeToExercise" id="fd6-CY-TMV"/>
+                        <segue destination="Jtc-3Q-d5f" kind="show" identifier="exercisesHomeToExercise" customClass="SegueFromRight" customModule="CS247App" customModuleProvider="target" id="fd6-CY-TMV"/>
                         <segue destination="i1m-Ur-YPZ" kind="show" identifier="exercisesHomeToMilestoneNotification" id="o4N-vN-l8L"/>
                     </connections>
                 </viewController>
@@ -259,7 +254,7 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="vBi-O2-obS" kind="show" identifier="milestonesHomeToMilestone" id="tSy-b6-qNg"/>
+                                    <segue destination="vBi-O2-obS" kind="show" identifier="milestonesHomeToMilestone" customClass="SegueFromRight" customModule="CS247App" customModuleProvider="target" id="tSy-b6-qNg"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xVN-wu-MIH">
@@ -268,7 +263,7 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="hd6-el-H0v" kind="show" id="4Gw-VB-oCl"/>
+                                    <segue destination="hd6-el-H0v" kind="show" customClass="SegueFromLeft" customModule="CS247App" customModuleProvider="target" id="4Gw-VB-oCl"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m3o-gq-hpO">
@@ -285,8 +280,8 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="milestone2Button" destination="m3o-gq-hpO" id="QfB-RX-1HK"/>
-                        <segue destination="YP5-nR-TMB" kind="show" identifier="milestonesHomeToMilestone2" id="1Kj-fh-Ac9"/>
+                        <outlet property="milestone2Button" destination="m3o-gq-hpO" id="HQS-bz-s1x"/>
+                        <segue destination="YP5-nR-TMB" kind="show" identifier="milestonesHomeToMilestone2" customClass="SegueFromRight" customModule="CS247App" customModuleProvider="target" id="1Kj-fh-Ac9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jRH-kT-E6I" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -308,6 +303,15 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="milestone2" translatesAutoresizingMaskIntoConstraints="NO" id="YMe-Bl-mpQ">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wJ6-tK-huG">
+                                <rect key="frame" x="0.0" y="0.0" width="82" height="58"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Ht9-Je-1m3" kind="show" customClass="SegueFromLeft" customModule="CS247App" customModuleProvider="target" id="cfi-Dm-Jac"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -338,7 +342,7 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Ht9-Je-1m3" kind="show" id="ZW3-0S-yFV"/>
+                                    <segue destination="Ht9-Je-1m3" kind="show" customClass="SegueFromLeft" customModule="CS247App" customModuleProvider="target" id="ZW3-0S-yFV"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -362,7 +366,7 @@
         <image name="squats" width="375" height="667"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="4Gw-VB-oCl"/>
+        <segue reference="Fer-fZ-0XX"/>
         <segue reference="fb9-d7-SJi"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -18,9 +18,9 @@ class ExerciseViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if (exerciseType! == 1) {
+        if (exerciseType! == Globals.SQUATS) {
             exerciseImage.image = UIImage(named: "squats")
-        } else if (exerciseType! == 2) {
+        } else if (exerciseType! == Globals.LEGEXTS) {
             exerciseImage.image = UIImage(named: "leg-ext")
         }
         
@@ -32,7 +32,13 @@ class ExerciseViewController: UIViewController {
     }
     
     @IBAction func doneExerciseButtonAction(sender: AnyObject) {
-        // TODO: Check which exercise was done and set global var.
+        
+        if (exerciseType! == Globals.SQUATS) {
+            Globals.hasDoneSquats = true
+        } else if (exerciseType! == Globals.LEGEXTS) {
+            Globals.hasDoneLegExts = true
+        }
+
         performSegueWithIdentifier("exerciseToExercisesHome", sender: nil)
 
     }

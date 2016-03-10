@@ -23,6 +23,9 @@ class MilestonesHomeViewController: UIViewController {
 
     @IBAction func milestone2ButtonAction(sender: AnyObject) {
         // If this milestone is shown, then segue to milestone2 view.
+        if (Globals.hasGottenMilestone) {
+            performSegueWithIdentifier("milestonesHomeToMilestone2", sender: nil)
+        }
     }
     
 }

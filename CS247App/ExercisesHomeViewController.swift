@@ -10,6 +10,7 @@ import UIKit
 
 class ExercisesHomeViewController: UIViewController {
     
+    @IBOutlet weak var exercisesHomeImage: UIImageView!
     @IBOutlet weak var squatsButton: UIButton!
     @IBOutlet weak var legExtButton: UIButton!
     
@@ -20,6 +21,16 @@ class ExercisesHomeViewController: UIViewController {
         super.viewDidLoad()
         clickedExercise = false
         
+        if (Globals.hasDoneSquats && Globals.hasDoneLegExts) {
+            // Load exercises-all-done.png and set timer to get notification.
+            exercisesHomeImage.image = UIImage(named: "exercises-all-done")
+            
+            if (!Globals.hasGottenMilestone) {
+                Globals.hasGottenMilestone = true
+                let _ = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "segueToMilestonesNotification", userInfo: nil, repeats: false)
+            }
+        }
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -28,19 +39,27 @@ class ExercisesHomeViewController: UIViewController {
     }
 
     @IBAction func squatsButtonAction(sender: AnyObject) {
-        // If button is active, then segue to exercise
-        // with parameter.
-        clickedExercise = true
-        self.exerciseType = 1
-        performSegueWithIdentifier("exercisesHomeToExercise", sender: nil)
+        if (!Globals.hasDoneSquats) {
+            // If button is active, then segue to exercise
+            // with parameter.
+            clickedExercise = true
+            self.exerciseType = Globals.SQUATS
+            performSegueWithIdentifier("exercisesHomeToExercise", sender: nil)
+        }
     }
 
     @IBAction func legExtButtonAction(sender: AnyObject) {
-        // If button is active, then segue to exercise
-        // with parameter.
-        clickedExercise = true
-        self.exerciseType = 2
-        performSegueWithIdentifier("exercisesHomeToExercise", sender: nil)
+        if (!Globals.hasDoneLegExts) {
+            // If button is active, then segue to exercise
+            // with parameter.
+            clickedExercise = true
+            self.exerciseType = Globals.LEGEXTS
+            performSegueWithIdentifier("exercisesHomeToExercise", sender: nil)
+        }
+    }
+    
+    func segueToMilestonesNotification() {
+        performSegueWithIdentifier("exercisesHomeToMilestoneNotification", sender: nil)
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
