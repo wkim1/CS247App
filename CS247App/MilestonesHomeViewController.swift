@@ -10,9 +10,16 @@ import UIKit
 
 class MilestonesHomeViewController: UIViewController {
     
+    @IBOutlet weak var milestonesHomeImage: UIImageView!
     @IBOutlet weak var milestone2Button: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if (Globals.hasGottenMilestone) {
+            milestonesHomeImage.image = UIImage(named: "milestones-home2")
+        } else {
+            milestonesHomeImage.image = UIImage(named: "milestones-home1")
+        }
         
     }
     

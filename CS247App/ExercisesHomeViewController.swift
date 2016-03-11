@@ -29,8 +29,25 @@ class ExercisesHomeViewController: UIViewController {
                 Globals.hasGottenMilestone = true
                 let _ = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "segueToMilestonesNotification", userInfo: nil, repeats: false)
             }
+        } else if (Globals.hasDoneSquats) {
+            exercisesHomeImage.image = UIImage(named: "exercises-home-squats-done")
+        } else if (Globals.hasDoneLegExts) {
+            exercisesHomeImage.image = UIImage(named: "exercises-home-leg-ext-done")
+        } else {
+            exercisesHomeImage.image = UIImage(named: "exercises-home")
         }
         
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        if (Globals.hasDoneSquats) {
+            // Move the button up.
+            legExtButton.frame = CGRectMake(
+                legExtButton.frame.origin.x,
+                legExtButton.frame.origin.y - legExtButton.frame.height,
+                legExtButton.frame.size.width,
+                legExtButton.frame.size.height)
+        }
     }
     
     override func didReceiveMemoryWarning() {

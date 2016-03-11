@@ -91,7 +91,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <segue destination="hd6-el-H0v" kind="show" identifier="allyConfirmationToExercisesHome" customClass="SegueFromRight" customModule="CS247App" customModuleProvider="target" id="Fer-fZ-0XX"/>
+                        <segue destination="hd6-el-H0v" kind="show" identifier="allyConfirmationToExercisesHome" id="Fer-fZ-0XX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rAg-VE-9ak" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -113,22 +113,22 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="squats" translatesAutoresizingMaskIntoConstraints="NO" id="alC-WI-aYX">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pyv-pZ-mjV">
-                                <rect key="frame" x="93" y="439" width="188" height="70"/>
-                                <state key="normal">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="doneExerciseButtonAction:" destination="Jtc-3Q-d5f" eventType="touchUpInside" id="FHk-Tw-bwT"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wfn-W4-YWi">
-                                <rect key="frame" x="0.0" y="0.0" width="81" height="56"/>
+                                <rect key="frame" x="0.0" y="0.0" width="81" height="78"/>
                                 <state key="normal">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="hd6-el-H0v" kind="show" customClass="SegueFromLeft" customModule="CS247App" customModuleProvider="target" id="7oM-5E-48H"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pyv-pZ-mjV">
+                                <rect key="frame" x="93" y="461" width="188" height="70"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="doneExerciseButtonAction:" destination="Jtc-3Q-d5f" eventType="touchUpInside" id="FHk-Tw-bwT"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -179,7 +179,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="njC-nX-8qq">
-                                <rect key="frame" x="8" y="379" width="355" height="91"/>
+                                <rect key="frame" x="8" y="374" width="355" height="97"/>
                                 <state key="normal">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -215,13 +215,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="milestone-notification" translatesAutoresizingMaskIntoConstraints="NO" id="e5p-uD-YP3">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jfL-wH-R8k">
-                                <rect key="frame" x="125" y="314" width="125" height="39"/>
-                                <state key="normal" title="New milestone">
+                                <rect key="frame" x="109" y="331" width="160" height="57"/>
+                                <state key="normal">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Ht9-Je-1m3" kind="show" id="9Xy-B4-g17"/>
+                                    <segue destination="Ht9-Je-1m3" kind="show" animates="NO" id="9Xy-B4-g17"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -248,15 +251,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="milestones-home2" translatesAutoresizingMaskIntoConstraints="NO" id="Shd-MP-24t">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c9O-tI-ZiA">
-                                <rect key="frame" x="0.0" y="194" width="375" height="99"/>
-                                <state key="normal">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="vBi-O2-obS" kind="show" identifier="milestonesHomeToMilestone" customClass="SegueFromRight" customModule="CS247App" customModuleProvider="target" id="tSy-b6-qNg"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xVN-wu-MIH">
                                 <rect key="frame" x="0.0" y="596" width="189" height="71"/>
                                 <state key="normal">
@@ -267,12 +261,21 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m3o-gq-hpO">
-                                <rect key="frame" x="0.0" y="293" width="375" height="90"/>
+                                <rect key="frame" x="0.0" y="400" width="375" height="90"/>
                                 <state key="normal">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="milestone2ButtonAction:" destination="Ht9-Je-1m3" eventType="touchUpInside" id="BSu-O1-wfE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c9O-tI-ZiA">
+                                <rect key="frame" x="0.0" y="303" width="375" height="89"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vBi-O2-obS" kind="show" identifier="milestonesHomeToMilestone" customClass="SegueFromRight" customModule="CS247App" customModuleProvider="target" id="tSy-b6-qNg"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -281,6 +284,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="milestone2Button" destination="m3o-gq-hpO" id="HQS-bz-s1x"/>
+                        <outlet property="milestonesHomeImage" destination="Shd-MP-24t" id="CH2-hQ-VZE"/>
                         <segue destination="YP5-nR-TMB" kind="show" identifier="milestonesHomeToMilestone2" customClass="SegueFromRight" customModule="CS247App" customModuleProvider="target" id="1Kj-fh-Ac9"/>
                     </connections>
                 </viewController>
@@ -304,7 +308,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wJ6-tK-huG">
-                                <rect key="frame" x="0.0" y="0.0" width="82" height="58"/>
+                                <rect key="frame" x="0.0" y="0.0" width="82" height="79"/>
                                 <state key="normal">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -337,7 +341,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qst-Xq-DVo">
-                                <rect key="frame" x="0.0" y="0.0" width="82" height="58"/>
+                                <rect key="frame" x="0.0" y="0.0" width="82" height="81"/>
                                 <state key="normal">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -360,13 +364,14 @@
         <image name="ally-setup" width="375" height="667"/>
         <image name="exercises-home" width="375" height="667"/>
         <image name="login" width="375" height="667"/>
+        <image name="milestone-notification" width="375" height="667"/>
         <image name="milestone1" width="375" height="667"/>
         <image name="milestone2" width="375" height="667"/>
         <image name="milestones-home2" width="375" height="667"/>
         <image name="squats" width="375" height="667"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Fer-fZ-0XX"/>
+        <segue reference="4Gw-VB-oCl"/>
         <segue reference="fb9-d7-SJi"/>
     </inferredMetricsTieBreakers>
 </document>
