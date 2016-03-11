@@ -38,10 +38,10 @@
             </objects>
             <point key="canvasLocation" x="331.5" y="357.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Setup Allies View Controller-->
         <scene sceneID="QYb-Mg-dWK">
             <objects>
-                <viewController id="i6k-PV-NHs" sceneMemberID="viewController">
+                <viewController id="i6k-PV-NHs" customClass="SetupAlliesViewController" customModule="CS247App" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Okw-5x-zpN"/>
                         <viewControllerLayoutGuide type="bottom" id="ei3-xs-EMZ"/>
@@ -62,10 +62,36 @@
                                     <segue destination="WHW-lB-j7t" kind="show" customClass="SegueFromRight" customModule="CS247App" customModuleProvider="target" id="I1g-IQ-cq6"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="srs-Ed-IuL">
+                                <rect key="frame" x="323" y="267" width="26" height="26"/>
+                                <state key="normal" title="check1" image="checkbox-unchecked"/>
+                                <connections>
+                                    <action selector="checkbox1Action:" destination="i6k-PV-NHs" eventType="touchUpInside" id="Tv1-HQ-MLf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sfb-ee-mEr">
+                                <rect key="frame" x="323" y="350" width="26" height="26"/>
+                                <state key="normal" title="check2" image="checkbox-unchecked"/>
+                                <connections>
+                                    <action selector="checkbox2Action:" destination="i6k-PV-NHs" eventType="touchUpInside" id="Lo6-Dn-Mao"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xsE-Dx-yVf">
+                                <rect key="frame" x="323" y="499" width="26" height="26"/>
+                                <state key="normal" title="check3" image="checkbox-unchecked"/>
+                                <connections>
+                                    <action selector="checkbox3Action:" destination="i6k-PV-NHs" eventType="touchUpInside" id="vDG-lm-Dhw"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="checkbox1" destination="srs-Ed-IuL" id="dk1-Sg-84X"/>
+                        <outlet property="checkbox2" destination="Sfb-ee-mEr" id="IpF-0b-mmZ"/>
+                        <outlet property="checkbox3" destination="xsE-Dx-yVf" id="Yp9-em-e5J"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rK2-oZ-3oI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -362,6 +388,7 @@
     <resources>
         <image name="ally-confirmation" width="375" height="667"/>
         <image name="ally-setup" width="375" height="667"/>
+        <image name="checkbox-unchecked" width="26" height="26"/>
         <image name="exercises-home" width="375" height="667"/>
         <image name="login" width="375" height="667"/>
         <image name="milestone-notification" width="375" height="667"/>
@@ -371,7 +398,7 @@
         <image name="squats" width="375" height="667"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="4Gw-VB-oCl"/>
+        <segue reference="Fer-fZ-0XX"/>
         <segue reference="fb9-d7-SJi"/>
     </inferredMetricsTieBreakers>
 </document>
